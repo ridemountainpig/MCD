@@ -2,20 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>別具滋味：麥當勞菜單首頁｜麥當勞 McDonald's</title>
     <link rel="stylesheet" type="text/css" href="mcd.css">
+    <script src="./mcd.js"></script>
+    <title>別具滋味：麥當勞菜單首頁｜麥當勞 McDonald's</title>
 </head>
 
 <body>
     <div class="top">
-        <img class="topBarPic"
+        <img id="topBarPic" 
             src="https://www.mcdonalds.com/etc/designs/mcd/tw/zh-tw/_jcr_content/logo/image.img.jpg/1628667064270.jpg">
         <nav class="topBarNav">
-            <span class="topBarNavSpan">別具滋味</span>
-            <span class="topBarNavSpan">企業永續</span>
-            <span class="topBarNavSpan">數位便利</span>
-            <span class="topBarNavSpan">現正推出</span>
-            <span class="topBarNavSpan">尋找餐廳</span>
+            <span id="topBarNavSpan1" onclick="bottomRed2()">別具滋味</span>
+            <span id="red1"></span>
+            <span id="topBarNavSpan2" onclick="bottomRed2()">企業永續</span>
+            <span id="red2"></span>
+            <span id="topBarNavSpan3" onclick="bottomRed3()">數位便利</span>
+            <span id="red3"></span>
+            <span id="topBarNavSpan4" onclick="bottomRed4()">現正推出</span>
+            <span id="red4"></span>
+            <span id="topBarNavSpan5" onclick="bottomRed5()">尋找餐廳</span>
+            <span id="red5"></span>
         </nav>
         <div class="topBarRight">
             <span class="topBarSearch">站內搜尋</span>
@@ -23,13 +29,17 @@
         </div>
     </div>
 
+
     <div>
         <div class="leftMenuAll_div">
             <ul class="leftMenuAll_ul">
+
                 <li class="leftMenuAll_li">
-                    <img class="leftMenuAll_Pic"
-                        src="https://www.mcdonalds.com/is/image/content/dam/tw/logo/logo-80.png?$Category_Mobile$">
-                    <span class="leftMenuAll_span">所有餐點</span>
+                    <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu.html">
+                        <img class="leftMenuAll_Pic"
+                            src="https://www.mcdonalds.com/is/image/content/dam/tw/logo/logo-80.png?$Category_Mobile$">
+                        <span class="leftMenuAll_span">所有餐點</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -38,49 +48,76 @@
     <div class="leftMenu_div">
         <ul class="leftMenu_ul">
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EBM_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">早餐</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/breakfast.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EBM_160x160_0619.png?$Category_Mobile$">
+                    <span class="leftMenu_span">早餐</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EVM_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">超值全餐</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/extra-value-meals.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EVM_160x160_0619.png?$Category_Mobile$">
+                    <span class="leftMenu_span">超值全餐</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/Signature_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">極選系列</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/signature-series.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/Signature_160x160_0619.png?$Category_Mobile$">
+                    <span class="leftMenu_span">極選系列</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EVM_set_160x160_0619_1.png?$Category_Mobile$">
-                <span class="leftMenu_span"> 超值全餐配餐</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/side-order.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/EVM_set_160x160_0619_1.png?$Category_Mobile$">
+                    <span class="leftMenu_span"> 超值全餐配餐</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/HSB_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">麥當勞分享盒</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/happy-sharing-box.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/HSB_160x160_0619.png?$Category_Mobile$">
+                    <span class="leftMenu_span">麥當勞分享盒</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/HappyMeal_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">Happy Meal</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/happy-meal.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/HappyMeal_160x160_0619.png?$Category_Mobile$">
+                    <span class="leftMenu_span">Happy Meal</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/BA_Combo-2-160x160.jpg?$Category_Mobile$">
-                <span class="leftMenu_span">銅板輕鬆點</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/50-dollars-meal.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/BA_Combo-2-160x160.jpg?$Category_Mobile$">
+                    <span class="leftMenu_span">銅板輕鬆點</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/McCafe_160x160_0619.png?$Category_Mobile$">
-                <span class="leftMenu_span">McCafé</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/mccafe.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/McCafe-carousel-211109.png?$Category_Mobile$">
+                    <span class="leftMenu_span">McCafé</span>
+                </a>
+
             </li>
             <li>
-                <img class="leftMenu_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/Dessert_160x160_1230.jpg?$Category_Mobile$">
-                <span class="leftMenu_span">飲料與點心</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/full-menu/beverages-and-snacks.html">
+                    <img class="leftMenu_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/menu/Dessert_160x160_1230.jpg?$Category_Mobile$">
+                    <span class="leftMenu_span">飲料與點心</span>
+                </a>
+
             </li>
         </ul>
     </div>
@@ -92,57 +129,83 @@
     <div>
         <ul class="menuFirst_ul">
             <li class="menuFirst_li">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-mcmuffin.jpg?$Category_Desktop$">
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/egg-mcmuffin.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-mcmuffin.jpg?$Category_Desktop$">
 
-                <span class="menuFirst_span">滿福堡</span>
+                    <span class="menuFirst_span">滿福堡</span>
+                </a>
+
             </li>
 
             <li class="menuFirst_li_middle">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/sausage-mcmuffin.jpg?$Category_Desktop$">
-                <span class="menuFirst_span_middle">豬肉滿福堡</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/sausage-mcmuffin.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/sausage-mcmuffin.jpg?$Category_Desktop$">
+                    <span class="menuFirst_span_middle">豬肉滿福堡</span>
+                </a>
+
             </li>
             <li class="menuFirst_li_last">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/sausage-mcmuffin-with-egg.jpg?$Category_Desktop$">
-                <span class="menuFirst_span_last">豬肉滿福堡加蛋</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/sausage-mcmuffin-with-egg.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/sausage-mcmuffin-with-egg.jpg?$Category_Desktop$">
+                    <span class="menuFirst_span_last">豬肉滿福堡加蛋</span>
+                </a>
+
             </li>
         </ul>
         <ul class="menu2_ul">
             <li class="menu2_li">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/mega-mcmuffin.jpg?$Category_Desktop$">
-                <span class="menu2_span">無敵豬肉滿福堡加蛋</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/mega-mcmuffin.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/mega-mcmuffin.jpg?$Category_Desktop$">
+                    <span class="menu2_span">無敵豬肉滿福堡加蛋</span>
+                </a>
+
             </li>
             <li class="menu2_li_middle">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/chicken-muffin-with-egg.jpg?$Category_Desktop$">
-                <span class="menu2_span_middle">香鷄滿福堡加蛋</span>
-            </li>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/chicken-muffin-with-egg.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/chicken-muffin-with-egg.jpg?$Category_Desktop$">
+                    <span class="menu2_span_middle">香鷄滿福堡加蛋</span>
+                </a>
 
+            </li>
             <li class="menu2_li_last">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/chicken-muffin.jpg?$Category_Desktop$">
-                <span class="menu2_span_last">香鷄滿福堡</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/chicken-muffin.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/chicken-muffin.jpg?$Category_Desktop$">
+                    <span class="menu2_span_last">香鷄滿福堡</span>
+                </a>
+
             </li>
         </ul>
         <ul class="menu3_ul">
             <li class="menuFirst_li">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/muffin-with-vegetable.jpg?$Category_Desktop$">
-                <span class="menu3_span">青蔬滿福堡</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/muffin-with-vegetables.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/muffin-with-vegetable.jpg?$Category_Desktop$">
+                    <span class="menu3_span">青蔬滿福堡</span>
+                </a>
+
             </li>
             <li class="menuFirst_li_middle">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-burger-with-chicken.jpg?$Category_Desktop$">
-                <span class="menu3_span_middle">香鷄蛋堡</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/egg-burger-with-chicken.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-burger-with-chicken.jpg?$Category_Desktop$">
+                    <span class="menu3_span_middle">香鷄蛋堡</span>
+                </a>
+
             </li>
 
             <li class="menuFirst_li_last">
-                <img class="menuFirst_Pic"
-                    src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-burger.jpg?$Category_Desktop$">
-                <span class="menu3_span_last">吉事蛋堡</span>
+                <a class="menu_a" href="https://www.mcdonalds.com/tw/zh-tw/product/egg-burger.html">
+                    <img class="menuFirst_Pic"
+                        src="https://www.mcdonalds.com/is/image/content/dam/tw/nutrition/nfl-product/product/regular/egg-burger.jpg?$Category_Desktop$">
+                    <span class="menu3_span_last">吉事蛋堡</span>
+                </a>
+
             </li>
         </ul>
     </div>
