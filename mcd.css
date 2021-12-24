@@ -1,4 +1,5 @@
 .top {
+    position: relative;
     width: 102%;
     height: 110px;
     box-shadow: 10px 0.01px 5px rgb(230, 229, 229);
@@ -6,7 +7,7 @@
     margin-left: -17px;
 }
 
-.topBarPic {
+#topBarPic {
     padding-left: 40px;
     padding-right: 100px;
     width: 110px;
@@ -18,9 +19,123 @@
     margin-top: -50px;
 }
 
-.topBarNavSpan {
-    padding-right: 25px;
+#topBarNavSpan1 {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
     font-size: 18px;
+}
+
+#topBarNavSpan2 {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    font-size: 18px;
+}
+
+#topBarNavSpan3 {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    font-size: 18px;
+}
+
+#topBarNavSpan4 {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    font-size: 18px;
+}
+
+#topBarNavSpan5 {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    font-size: 18px;
+}
+
+#topBarNavRed {
+    height: 10px;
+}
+
+#red1 {
+    position: absolute;
+    background-color: #DA291C;
+    width: 80px;
+    height: 5px;
+    margin-left: -92px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#red2 {
+    position: absolute;
+    background-color: #DA291C;
+    width: 80px;
+    height: 5px;
+    margin-left: -92px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#red3 {
+    position: absolute;
+    background-color: #DA291C;
+    width: 80px;
+    height: 5px;
+    margin-left: -90px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#red4 {
+    position: absolute;
+    background-color: #DA291C;
+    width: 80px;
+    height: 5px;
+    margin-left: -92px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#red5 {
+    position: absolute;
+    background-color: #DA291C;
+    width: 80px;
+    height: 5px;
+    margin-left: -86px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+
+#topBarNavSpan1:hover {
+    background-color: #FFC72C;
+    border-radius: 8px;
+}
+
+#topBarNavSpan2:hover {
+    background-color: #FFC72C;
+    border-radius: 8px;
+}
+
+#topBarNavSpan3:hover {
+    background-color: #FFC72C;
+    border-radius: 8px;
+}
+
+#topBarNavSpan4:hover {
+    background-color: #FFC72C;
+    border-radius: 8px;
+}
+
+#topBarNavSpan5:hover {
+    background-color: #FFC72C;
+    border-radius: 8px;
 }
 
 .topBarRight {
@@ -184,6 +299,7 @@
     top: 50px;
     font-size: 18px;
 }
+
 .menu2_span {
     position: relative;
     left: -245px;
@@ -225,3 +341,31 @@
     top: 50px;
     font-size: 18px;
 }
+
+.menu_a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu_a:link {
+    color: #000000;
+}
+
+/* 未存取連結*/
+.menu_a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 已存取連結 */
+/* a:hover {
+    color: #FF00FF;
+} */
+
+/* 滑鼠移動到連結上 */
+.menu_a:active {
+    color: #000000;
+}
+
+/* 滑鼠點選時 */
